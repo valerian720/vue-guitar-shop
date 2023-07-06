@@ -67,7 +67,15 @@
     </div>
   </nav>
   <router-view />
-  <VersionDisplay />
+  <!-- Footer-->
+  <footer
+    class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-dark"
+  >
+    <div class="col-md-4 d-flex align-items-center m-2">
+      <span class="text-white">© 2023 Guitar shop inc.</span>
+    </div>
+    <VersionDisplay class="text-white" />
+  </footer>
 </template>
 
 <script lang="ts">

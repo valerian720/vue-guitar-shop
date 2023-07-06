@@ -5,4 +5,8 @@ export class ProductList {
   constructor(products: Product[]) {
     this.products = products;
   }
+
+  public getFilteredProductList(): Product[] {
+    return this.products; // TODO: add filtering
+  }
 }
