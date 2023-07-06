@@ -67,7 +67,20 @@
     </div>
   </nav>
   <router-view />
+  <VersionDisplay />
 </template>
+
+<script lang="ts">
+import { Options, Vue } from "vue-class-component";
+import VersionDisplay from "@/components/VersionDisplay.vue";
+
+@Options({
+  components: {
+    VersionDisplay,
+  },
+})
+export default class App extends Vue {}
+</script>
 
 <style lang="less">
 #app {
