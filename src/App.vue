@@ -69,7 +69,7 @@
   <router-view />
   <!-- Footer-->
   <footer
-    class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-dark"
+    class="d-flex flex-wrap justify-content-between align-items-center m-0 py-3 border-top bg-dark"
   >
     <div class="col-md-4 d-flex align-items-center m-2">
       <span class="text-white">© 2023 Guitar shop inc.</span>
