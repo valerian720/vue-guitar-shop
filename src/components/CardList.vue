@@ -11,6 +11,8 @@
         </div>
       </div>
     </header>
+    <!--  -->
+    <search-util :search="products.search" />
     <!-- Section-->
     <section class="py-5">
       <div class="container px-4 px-lg-5 mt-5">
@@ -33,17 +35,21 @@
 import { Vue, Options } from "vue-class-component";
 
 import ProductCard from "@/components/ProductCard.vue";
+import SearchUtil from "@/components/Utils/SearchUtil.vue";
 
 import { Product } from "@/structures/Product";
 import { ProductList } from "@/structures/ProductList";
+import { SearchSettings } from "@/structures/SearchSettings";
 
 @Options({
   components: {
     ProductCard,
+    SearchUtil,
   },
 })
 export default class CardList extends Vue {
   products: ProductList = new ProductList([]);
+
   //
   // product = new Product(
   //   "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
@@ -55,7 +61,7 @@ export default class CardList extends Vue {
     this.fillDummyGuitarProductList();
   }
   //
-  dummyCount = 8;
+  dummyCount = 4 * 12;
   fillDummyGuitarProductList() {
     let arr: Product[] = [];
     for (let i = 0; i < this.dummyCount; i++) {
